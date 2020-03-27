@@ -29,8 +29,9 @@ export default function Register() {
     };
 
     try {
-      await api.post("ongs", data);
+      const response = await api.post("ongs", data);
 
+      alert(`Seu ID e ${response.data.id}`);
       history.push("/");
     } catch (err) {
       alert("Erro no casatro, tente novamente");
