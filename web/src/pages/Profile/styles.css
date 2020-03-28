@@ -85,3 +85,17 @@
   line-height: 20px;
   font-size: 16px;
 }
+
+.noIncidents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.noIncidents span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 18px;
+}

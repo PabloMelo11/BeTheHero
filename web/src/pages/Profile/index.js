@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { FiPower, FiTrash2 } from "react-icons/fi";
+import { FiPower, FiTrash2, FiMessageSquare } from "react-icons/fi";
 
 import api from "../../services/api";
 
@@ -61,7 +61,14 @@ export default function Profile() {
         </button>
       </header>
 
-      <h1>Casos cadastrados</h1>
+      {incidents.length > 0 ? (
+        <h1>Casos cadastrados</h1>
+      ) : (
+        <div className="noIncidents">
+          <span>Voce nao possui nenhum caso cadastrado</span>
+          <FiMessageSquare size={50} color="#a8a8b3" />
+        </div>
+      )}
 
       <ul>
         {incidents.map(incident => (
