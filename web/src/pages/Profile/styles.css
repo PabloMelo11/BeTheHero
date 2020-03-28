@@ -97,5 +97,6 @@
 .noIncidents span {
   font-size: 25px;
   font-weight: bold;
-  margin-right: 18px;
+  margin-right: 6px;
+  color: #737380;
 }
