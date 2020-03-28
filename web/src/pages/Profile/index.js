@@ -65,7 +65,7 @@ export default function Profile() {
         <h1>Casos cadastrados</h1>
       ) : (
         <div className="noIncidents">
-          <span>Voce nao possui nenhum caso cadastrado</span>
+          <span>Nao foi cadastrado nenhum caso!</span>
           <FiMessageSquare size={50} color="#a8a8b3" />
         </div>
       )}
